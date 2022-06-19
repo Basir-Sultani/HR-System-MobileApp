@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Employees>
+  <Employee Id="1">
+    <Name>Fred</Name>
+    <Department>1</Department>
+    <Phone>65465985</Phone>
+  </Employee>
+  <Employee Id="2">
+    <Name>Dev</Name>
+    <Department>2</Department>
+    <Phone>045885455</Phone>
+  </Employee>
+  <Employee Id="3">
+    <Name>Basir</Name>
+    <Department>1</Department>
+    <Phone>8890809809</Phone>
+  </Employee>
+  <Employee Id="4">
+    <Name>Saeed</Name>
+    <Department>1</Department>
+    <Phone>0000000</Phone>
+  </Employee>
+  <Employee Id="5">
+    <Name>Sultani</Name>
+    <Department>1</Department>
+    <Phone>010010110</Phone>
+  </Employee>
+  <Employee Id="6">
+    <Name>Sultani</Name>
+    <Department>1</Department>
+    <Phone>01010101</Phone>
+  </Employee>
+</Employees>
