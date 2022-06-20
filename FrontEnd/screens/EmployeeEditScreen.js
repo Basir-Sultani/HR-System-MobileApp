@@ -46,14 +46,26 @@ const EmployeeEditScreen = ({ navigation, route }) => {
     }
 
     return(
-        <View style={{flex:1,padding:10}}>
-            <Text style={Styles.header}>Edit a Employee</Text>
+        <View style={{flex:1,padding:10, backgroundColor: '#595959'}}>
+            <Text style={Styles.header}>Edit Employee Details</Text>
             <Text style={Styles.label}>NAME:</Text>
             <TextInput style={Styles.textInput} value={name} onChangeText={setName} />
             <Text style={Styles.label}>Phone:</Text>
             <TextInput style={Styles.textInput} value={Phone} onChangeText={setPhone} />
             <Text style={Styles.label}>Department:</Text>
-            <Picker selectedValue={Department} onValueChange={(v,i) => setDepartment(v)}>{renderEmployees()}</Picker>
+            <Picker 
+                style={{color: '#ffffff', 
+                    backgroundColor: '#595959', 
+                    borderWidth: 1,
+                    borderColor: '#ffffff',
+                    marginVertical: 5,
+                    padding: 5,
+                }}
+                selectedValue={Department} 
+                onValueChange={(v,i) => setDepartment(v)}
+            >
+                {renderEmployees()}
+            </Picker>
            
             <Text style={Styles.label}>Street:</Text>
             <TextInput style={Styles.textInput} value={street} onChangeText={setStreet} />
@@ -72,7 +84,7 @@ const EmployeeEditScreen = ({ navigation, route }) => {
 
 
 
-            <Button style={{marginTop: 15}} title="Save" onPress={submit} color="#00a887" />
+            <Button style={{marginTop: 15}} title="Save" onPress={submit} color="#941a1d" />
         </View>
     );
 }
@@ -81,18 +93,18 @@ export default EmployeeEditScreen;
 
 const Styles = StyleSheet.create({
     header: {
-        borderBottomWidth:1,
-        color:'#00a887',
-        fontWeight:'bold',
-        fontSize:18,
-        borderColor: '#00a887',
-        marginBottom: 15
+        backgroundColor: '#941a1d',
+        color:'#ffffff',
+        fontSize:16,
+        borderColor: '#941a1d',
+        padding: 5,
+        textAlign: 'center'
     },
     contactTile: {
         padding: 10,
-        backgroundColor: '#00a887',
+        backgroundColor: '#941a1d',
         borderBottomWidth: 1,
-        borderColor: '#05876E',
+        borderColor: '#941a1d',
         borderRightWidth: 1,
         marginVertical: 5,
         marginHorizontal: 10,
@@ -101,12 +113,13 @@ const Styles = StyleSheet.create({
         color:'white'
     },
     label: {
-        color:'#00a887',
+        color:'#ffffff',
         fontWeight: 'bold'
     },
     textInput: {
         borderWidth: 1,
-        borderColor: '#00a887',
+        borderColor: '#ffffff',
+        color: '#ffffff',
         marginVertical: 5,
         padding: 5
     }

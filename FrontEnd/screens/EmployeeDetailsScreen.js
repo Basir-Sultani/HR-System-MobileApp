@@ -5,10 +5,10 @@ const EmployeeDetailsScreen = ({ navigation, route }) => {
     let Employee = route.params.Employee;
 
     return(
-        <View style={{flex:1,padding:10}}>
+        <View style={{flex:1,padding:10, backgroundColor: '#595959'}}>
             <Text style={Styles.header}>Employee</Text>
             <Text style={Styles.label}>Id: {Employee.Id}</Text>
-            <Text style={Styles.label}>NAME: {Employee.Name}</Text>
+            <Text style={Styles.label}>Name: {Employee.Name}</Text>
             <Text style={Styles.label}>Phone: {Employee.Phone}</Text>
             <Text style={Styles.label}>Department: {Employee.Department.Name}</Text>
             <Text style={Styles.label}>Street: {Employee.Street}</Text>          
@@ -24,15 +24,16 @@ export default EmployeeDetailsScreen;
 
 const Styles = StyleSheet.create({
     header: {
-        borderBottomWidth:1,
-        color:'#00a887',
-        fontWeight:'bold',
-        fontSize:18,
-        borderColor: '#00a887',
-        marginBottom: 15
+        backgroundColor: '#941a1d',
+        color:'#ffffff',
+        fontSize:16,
+        borderColor: '#941a1d',
+        padding: 5,
+        textAlign: 'center'
     },
     label: {
-        color:'#00a887',
-        fontWeight: 'bold'
+        color:'#ffffff',
+        fontWeight: 'bold',
+        margin: 8,
     }
 });

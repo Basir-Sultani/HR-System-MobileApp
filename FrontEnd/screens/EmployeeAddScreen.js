@@ -35,10 +35,10 @@ const EmployeeAddScreen = (props) => {
     }
 
     return(
-        <View style={{flex:1,padding:10}}>
+        <View style={{flex:1,padding:10, backgroundColor: '#595959'}}>
             <Text style={Styles.header}>Add An Employee</Text>
 
-            <Text style={Styles.label}>NAME:</Text>
+            <Text style={Styles.label}>Name:</Text>
             <TextInput style={Styles.textInput} value={name} onChangeText={setName} />
 
             <Text style={Styles.label}>Phone:</Text>
@@ -49,8 +49,11 @@ const EmployeeAddScreen = (props) => {
 
             <Text style={Styles.label}>Department:</Text>
             <Picker 
+                style={Styles.picker}
                 selectedValue={department}
-                onValueChange={(v,i) => setDepartment(v)}>{renderDepartments()}
+                onValueChange={(v,i) => setDepartment(v)}
+            >
+                {renderDepartments()}
             </Picker>
 
 
@@ -70,7 +73,7 @@ const EmployeeAddScreen = (props) => {
             <TextInput style={Styles.textInput} value={country} onChangeText={setCountry} />
 
 
-            <Button style={{marginTop: 15}} title="Save" onPress={submit} color="#00a887" />
+            <Button style={{marginTop: 15}} title="Save" onPress={submit} color="#941a1d" />
         </View>
     );
 }
@@ -79,12 +82,15 @@ export default EmployeeAddScreen;
 
 const Styles = StyleSheet.create({
     header: {
-        borderBottomWidth:1,
-        color:'#00a887',
-        fontWeight:'bold',
-        fontSize:18,
-        borderColor: '#00a887',
-        marginBottom: 15
+        // borderBottomWidth:1,
+        backgroundColor: '#941a1d',
+        color:'#ffffff',
+        // fontWeight:'bold',
+        fontSize:16,
+        borderColor: '#941a1d',
+        // marginBottom: 15
+        padding: 5,
+        textAlign: 'center' 
     },
     contactTile: {
         padding: 10,
@@ -96,16 +102,25 @@ const Styles = StyleSheet.create({
         marginHorizontal: 10,
     },
     contactText: {
-        color:'white'
+        color:'#ffffff'
     },
     label: {
-        color:'#00a887',
+        color:'#ffffff',
         fontWeight: 'bold'
     },
     textInput: {
         borderWidth: 1,
-        borderColor: '#00a887',
+        borderColor: '#ffffff',
         marginVertical: 5,
-        padding: 5
+        padding: 5,
+        color: '#ffffff'
+    },
+    picker:{
+        color: '#ffffff', 
+        backgroundColor: '#595959', 
+        borderWidth: 1,
+        borderColor: '#ffffff',
+        marginVertical: 5,
+        padding: 5, 
     }
 });

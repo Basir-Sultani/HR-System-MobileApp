@@ -22,8 +22,8 @@ const EmployeeDeleteScreen = ({ navigation, route }) => {
     }
 
     return(
-        <View style={{flex:1,padding:10}}>
-            <Text style={Styles.header}>Delete an Employee</Text>
+        <View style={{flex:1,padding:10, backgroundColor: '#595959',}}>
+            <Text style={Styles.header}>Delete Employee</Text>
             <Text style={Styles.label}>ID: {Employee.Id}</Text>
             <Text style={Styles.label}>NAME: {Employee.Name}</Text>
             <Text style={Styles.label}>Phone: {Employee.Phone}</Text>
@@ -34,7 +34,7 @@ const EmployeeDeleteScreen = ({ navigation, route }) => {
             <Text style={Styles.label}>Zip: {Employee.Zip}</Text>
             <Text style={Styles.label}>Country: {Employee.Country}</Text>
 
-            <Button style={{marginTop: 15}} title="Delete" onPress={submit} color="#00a887" />
+            <Button style={{}} title="Delete" onPress={submit} color="#941a1d" />
         </View>
     );
 }
@@ -43,32 +43,21 @@ export default EmployeeDeleteScreen;
 
 const Styles = StyleSheet.create({
     header: {
-        borderBottomWidth:1,
-        color:'#00a887',
-        fontWeight:'bold',
-        fontSize:18,
-        borderColor: '#00a887',
-        marginBottom: 15
-    },
-    contactTile: {
-        padding: 10,
-        backgroundColor: '#00a887',
-        borderBottomWidth: 1,
-        borderColor: '#05876E',
-        borderRightWidth: 1,
-        marginVertical: 5,
-        marginHorizontal: 10,
-    },
-    contactText: {
-        color:'white'
+        backgroundColor: '#941a1d',
+        color:'#ffffff',
+        fontSize:16,
+        borderColor: '#941a1d',
+        padding: 5,
+        textAlign: 'center'
     },
     label: {
-        color:'#00a887',
-        fontWeight: 'bold'
+        color:'#ffffff',
+        fontWeight: 'bold',
+        margin: 8,
     },
     textInput: {
         borderWidth: 1,
-        borderColor: '#00a887',
+        borderColor: '#ffffff',
         marginVertical: 5,
         padding: 5
     }

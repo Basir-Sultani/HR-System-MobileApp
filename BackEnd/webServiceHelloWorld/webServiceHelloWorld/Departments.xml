@@ -4,12 +4,15 @@
 		<Name>General</Name>
 	</Department>
 	<Department Id="1">
-		<Name>IT</Name>
+		<Name>Information Communications Technology</Name>
 	</Department>
 	<Department Id="2">
-		<Name>Marketing</Name>
+		<Name>Finance</Name>
 	</Department>
 	<Department Id="3">
-		<Name>Sales</Name>
+		<Name>Marketing</Name>
+	</Department>
+	<Department Id="4">
+		<Name>Human Resources</Name>
 	</Department>
 </Departments>

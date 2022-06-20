@@ -2,7 +2,7 @@
 <Employees>
   <Employee Id="1">
     <Name>John Smith</Name>
-    <Department>0</Department>
+    <Department>1</Department>
     <Phone>0299882211</Phone>
     <Street>1 Code Lane</Street>
     <City>Javaville</City>
@@ -12,7 +12,7 @@
   </Employee>
   <Employee Id="2">
     <Name>Sue White</Name>
-    <Department>1</Department>
+    <Department>2</Department>
     <Phone>0388992255</Phone>
     <Street>16 Bit Way</Street>
     <City>Byte Cove</City>
@@ -28,6 +28,36 @@
     <City>Cloud Hills</City>
     <State>VIC</State>
     <Zip>1001</Zip>
+    <Country>Australia</Country>
+  </Employee>
+  <Employee Id="4">
+    <Name>Mary Blue</Name>
+    <Department>2</Department>
+    <Phone>0577882255</Phone>
+    <Street>4 Processor Boulevard</Street>
+    <City>Appletson</City>
+    <State>NT</State>
+    <Zip>1010</Zip>
+    <Country>Australia</Country>
+  </Employee>
+  <Employee Id="5">
+    <Name>Mick Green</Name>
+    <Department>3</Department>
+    <Phone>0299881122</Phone>
+    <Street>700 Bandwidth Street</Street>
+    <City>Bufferland</City>
+    <State>NSW</State>
+    <Zip>0110</Zip>
+    <Country>Australia</Country>
+  </Employee>
+  <Employee Id="6">
+    <Name>Basir Sultani</Name>
+    <Department>1</Department>
+    <Phone>0472722177</Phone>
+    <Street>100 React Street</Street>
+    <City>C Sharp</City>
+    <State>TAFE</State>
+    <Zip>2525</Zip>
     <Country>Australia</Country>
   </Employee>
 </Employees>
