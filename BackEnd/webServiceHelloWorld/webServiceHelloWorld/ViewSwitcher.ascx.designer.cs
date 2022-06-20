@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace webServiceHelloWorld {
+namespace webServiceHumanResource {
     
     
     public partial class ViewSwitcher {

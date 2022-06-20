@@ -127,7 +127,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Employees.xml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="helloworldWebService1.asmx" />
+    <Content Include="RoiHumanResourceWebService.asmx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -191,8 +191,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="helloworldWebService1.asmx.cs">
-      <DependentUpon>helloworldWebService1.asmx</DependentUpon>
+    <Compile Include="RoiHumanResourceWebService.asmx.cs">
+      <DependentUpon>RoiHumanResourceWebService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

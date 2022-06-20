@@ -1,5 +1,5 @@
 export function getEmployeesFromApiAsync() {
-    return fetch('http://192.168.1.3:44350/helloworldWebService1.asmx/GetEmployees')
+    return fetch('http://localhost:44350/RoiHumanResourceWebService.asmx/GetEmployees')
       .then((response) => {
             return response.json();
       })
@@ -8,11 +8,11 @@ export function getEmployeesFromApiAsync() {
       });
 }
 
-export function updateEmployeeFromApiAsync(b) {
+export function updateEmployeeFromApiAsync(e) {
 
-  let data = `id=${b.id}&name=${b.name}&Department=${b.Department}&Phone=${b.Phone}`; 
+  let data = `id=${e.id}&name=${e.name}&Department=${e.Department}&Phone=${e.Phone}&Street=${e.street}&City=${e.city}&State=${e.state}&Zip=${e.zip}&Country=${e.country}`; 
 
-  return fetch('http://192.168.1.3:44350/helloworldWebService1.asmx/UpdateEmployee', {
+  return fetch('http://localhost:44350/RoiHumanResourceWebService.asmx/Updateemployee', {
       method: 'POST',
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: data
@@ -26,11 +26,11 @@ export function updateEmployeeFromApiAsync(b) {
     });
 }
 
-export function addEmployeeFromApiAsync(b) {
+export function addEmployeeFromApiAsync(e) {
  
-  let data = `name=${b.name}&Department=${b.Department}&Phone=${b.Phone}`; 
-
-  return fetch('http://192.168.1.3:44350/helloworldWebService1.asmx/AddEmployee', {
+  let data = `name=${e.name}&department=${e.department}&phone=${e.phone}&street=${e.street}&city=${e.city}&state=${e.state}&zip=${e.zip}&country=${e.country}`; 
+  
+  return fetch('http://localhost:44350/RoiHumanResourceWebService.asmx/AddEmployee', {
       method: 'POST',
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: data
@@ -49,7 +49,7 @@ export function deleteContactFromApiAsync(id) {
   let data = `id=${id}`; 
   console.log('about to delete ' + data);
 
-  return fetch('http://localhost:44350/helloworldWebService1.asmx/DeleteEmployee', {
+  return fetch('http://localhost:44350/RoiHumanResourceWebService.asmx/Deleteemployee', {
       method: 'POST',
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: data
@@ -64,7 +64,7 @@ export function deleteContactFromApiAsync(id) {
 }
 
 export function getDepartmentsFromApiAsync() {
-  return fetch('http://localhost:44350/helloworldWebService1.asmx/GetDepartments')
+  return fetch('http://localhost:44350/RoiHumanResourceWebService.asmx/GetDepartments')
   
     .then((response) => {
           return response.json();

@@ -7,28 +7,29 @@ import { inheritLeadingComments } from '@babel/types';
 
 //const ContactsListScreen = (props) => {
 const EmployeesListScreen = ({ navigation }) => {
-    const [Employees, setEmployee] = useState([]);
+    const [Employees, setEmployees] = useState([]);
 
     useEffect(() => {
         let isMounted = true;               // note mutable flag
         getEmployeesFromApiAsync().then(response => {
-            setEmployee(response);
+            setEmployees(response);
         });
     }, []);
 
 
     function renderContacts() {
-        return Employees.map((b, i) => {
+        return Employees.map((d, i) => {
             return (
-               <View key={b.Id} style={Styles.contactTile}>            
+               <View key={d.Id} style={Styles.contactTile}>            
                     <View style={{width:'80%'}}>
-                        <Text style={{color:'#fff'}}>Name: {b.Name}</Text>
-                        <Text style={{color:'#fff'}}>Phone: {b.Phone}</Text>
+                        <Text style={{color:'#fff'}}>Name: {d.Name}</Text>
+                        <Text style={{color:'#fff'}}>Department: {d.Department.Name }</Text>
+                        <Text style={{color:'#fff'}}>Phone: {d.Phone}</Text>
                     </View>
                     <View  style={{width:'20%'}}>
-                        <Text style={Styles.EmployeeButton} onPress={() => navigation.navigate('EmployeeDetails', {Employee: b})}>DETAILS</Text>
-                        <Text style={Styles.EmployeeButton} onPress={() => navigation.navigate('EmployeeEdit', {Employee: b})}>UPDATE</Text>    
-                        <Text style={Styles.EmployeeButton} onPress={() => navigation.navigate('EmployeeDelete', {Employee: b})}>DELETE</Text>    
+                        <Text style={Styles.EmployeeButton} onPress={() => navigation.navigate('EmployeeDetails', {Employee: d})}>DETAILS</Text>
+                        <Text style={Styles.EmployeeButton} onPress={() => navigation.navigate('EmployeeEdit', {Employee: d})}>UPDATE</Text>    
+                        <Text style={Styles.EmployeeButton} onPress={() => navigation.navigate('EmployeeDelete', {Employee: d})}>DELETE</Text>    
                     </View>
               </View>
             );
@@ -38,7 +39,6 @@ const EmployeesListScreen = ({ navigation }) => {
     return(      
         <View style={{maxHeight:'100%'}}>  
                  
-            <Text style={Styles.header}>Library</Text>
             <TouchableOpacity style={Styles.addButton} onPress={() => navigation.navigate('EmployeeAdd', {})}>
                 <Text style={{color:'#fff',textAlign:'center'}}>Add an Employee</Text>
             </TouchableOpacity>  
@@ -84,7 +84,7 @@ const Styles = StyleSheet.create({
     EmployeeButton:{
         //backgroundColor:'#FFF',
         backgroundColor:'#FFF',
-        margin:'2.5',
+        margin: '3px',
         padding:'2.5',
         color:'#00a887',
         textAlign:"center"

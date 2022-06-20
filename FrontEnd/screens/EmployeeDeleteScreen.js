@@ -28,6 +28,12 @@ const EmployeeDeleteScreen = ({ navigation, route }) => {
             <Text style={Styles.label}>NAME: {Employee.Name}</Text>
             <Text style={Styles.label}>Phone: {Employee.Phone}</Text>
             <Text style={Styles.label}>Department: {Employee.Department.Name}</Text>
+            <Text style={Styles.label}>Street: {Employee.Street}</Text>
+            <Text style={Styles.label}>City: {Employee.City}</Text>
+            <Text style={Styles.label}>State: {Employee.State}</Text>
+            <Text style={Styles.label}>Zip: {Employee.Zip}</Text>
+            <Text style={Styles.label}>Country: {Employee.Country}</Text>
+
             <Button style={{marginTop: 15}} title="Delete" onPress={submit} color="#00a887" />
         </View>
     );

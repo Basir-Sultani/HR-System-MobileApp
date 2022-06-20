@@ -12,6 +12,11 @@ const EmployeeEditScreen = ({ navigation, route }) => {
 
     const [name, setName] = useState(Employee.Name);
     const [Phone, setPhone] = useState(Employee.Phone);
+    const [street, setStreet] = useState(Employee.Street);
+    const [city, setCity] = useState(Employee.City);
+    const [state, setState] = useState(Employee.State);
+    const [zip, setZip] = useState(Employee.Zip);
+    const [country, setCountry] = useState(Employee.Country);
    
      const [Department, setDepartment] = useState(Employee.Department.Id);
     const [Employees, setEmployees] = useState([]);
@@ -34,6 +39,7 @@ const EmployeeEditScreen = ({ navigation, route }) => {
             name,
             Phone,
             Department,
+            street, city, state, zip, country,
         }).then(response => {
             navigation.replace('Employees');
         });
@@ -49,6 +55,22 @@ const EmployeeEditScreen = ({ navigation, route }) => {
             <Text style={Styles.label}>Department:</Text>
             <Picker selectedValue={Department} onValueChange={(v,i) => setDepartment(v)}>{renderEmployees()}</Picker>
            
+            <Text style={Styles.label}>Street:</Text>
+            <TextInput style={Styles.textInput} value={street} onChangeText={setStreet} />
+
+            <Text style={Styles.label}>City:</Text>
+            <TextInput style={Styles.textInput} value={city} onChangeText={setCity} />
+
+            <Text style={Styles.label}>State:</Text>
+            <TextInput style={Styles.textInput} value={state} onChangeText={setState} />
+
+            <Text style={Styles.label}>Zip:</Text>
+            <TextInput style={Styles.textInput} value={zip} onChangeText={setZip} />
+
+            <Text style={Styles.label}>Country:</Text>
+            <TextInput style={Styles.textInput} value={country} onChangeText={setCountry} />
+
+
 
             <Button style={{marginTop: 15}} title="Save" onPress={submit} color="#00a887" />
         </View>

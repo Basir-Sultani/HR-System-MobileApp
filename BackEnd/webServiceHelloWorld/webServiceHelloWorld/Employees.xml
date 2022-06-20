@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Employees>
   <Employee Id="1">
-    <Name>Fred</Name>
-    <Department>1</Department>
-    <Phone>65465985</Phone>
+    <Name>John Smith</Name>
+    <Department>0</Department>
+    <Phone>0299882211</Phone>
+    <Street>1 Code Lane</Street>
+    <City>Javaville</City>
+    <State>NSW</State>
+    <Zip>0100</Zip>
+    <Country>Australia</Country>
   </Employee>
   <Employee Id="2">
-    <Name>Dev</Name>
-    <Department>2</Department>
-    <Phone>045885455</Phone>
+    <Name>Sue White</Name>
+    <Department>1</Department>
+    <Phone>0388992255</Phone>
+    <Street>16 Bit Way</Street>
+    <City>Byte Cove</City>
+    <State>QLD</State>
+    <Zip>1101</Zip>
+    <Country>Australia</Country>
   </Employee>
   <Employee Id="3">
-    <Name>Basir</Name>
-    <Department>1</Department>
-    <Phone>8890809809</Phone>
-  </Employee>
-  <Employee Id="4">
-    <Name>Saeed</Name>
-    <Department>1</Department>
-    <Phone>0000000</Phone>
-  </Employee>
-  <Employee Id="5">
-    <Name>Sultani</Name>
-    <Department>1</Department>
-    <Phone>010010110</Phone>
-  </Employee>
-  <Employee Id="6">
-    <Name>Sultani</Name>
-    <Department>1</Department>
-    <Phone>01010101</Phone>
+    <Name>Bob O'Bits</Name>
+    <Department>3</Department>
+    <Phone>0577882255</Phone>
+    <Street>8 Sillicon Road</Street>
+    <City>Cloud Hills</City>
+    <State>VIC</State>
+    <Zip>1001</Zip>
+    <Country>Australia</Country>
   </Employee>
 </Employees>

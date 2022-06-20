@@ -4,7 +4,7 @@ using System.Web;
 using System.Web.Routing;
 using Microsoft.AspNet.FriendlyUrls;
 
-namespace webServiceHelloWorld
+namespace webServiceHumanResource
 {
     public static class RouteConfig
     {
