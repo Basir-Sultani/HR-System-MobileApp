@@ -294,3 +294,7 @@ D:\Certificate IV IT\Mobile app\asmt\project 2\ROI Human Resources Application\B
 D:\Certificate IV IT\Mobile app\asmt\project 2\ROI Human Resources Application\BackEnd\webServiceHelloWorld\webServiceHelloWorld\obj\Debug\webServiceHelloWorld.csproj.CopyComplete
 D:\Certificate IV IT\Mobile app\asmt\project 2\ROI Human Resources Application\BackEnd\webServiceHelloWorld\webServiceHelloWorld\obj\Debug\webServiceHelloWorld.dll
 D:\Certificate IV IT\Mobile app\asmt\project 2\ROI Human Resources Application\BackEnd\webServiceHelloWorld\webServiceHelloWorld\obj\Debug\webServiceHelloWorld.pdb
+D:\Certificate IV IT\Mobile app\HRSystem\BackEnd\webServiceHelloWorld\webServiceHelloWorld\obj\Debug\webServiceHelloWorld.csproj.AssemblyReference.cache
+D:\Certificate IV IT\Mobile app\HRSystem\BackEnd\webServiceHelloWorld\webServiceHelloWorld\obj\Debug\webServiceHelloWorld.csproj.CoreCompileInputs.cache
+D:\Certificate IV IT\Mobile app\HRSystem\BackEnd\webServiceHelloWorld\webServiceHelloWorld\obj\Debug\webServiceHelloWorld.dll
+D:\Certificate IV IT\Mobile app\HRSystem\BackEnd\webServiceHelloWorld\webServiceHelloWorld\obj\Debug\webServiceHelloWorld.pdb
