@@ -7,16 +7,16 @@ namespace webServiceHumanResource
 {
     public class Employee
     {
-        public int      Id      { get; set; }
-        public string   Name     { get; set; }
-        public Department Department { get; set; }
+        private int      Id      { get; set; }
+        private string   Name     { get; set; }
+        private Department Department { get; set; }
 
-        public string    Phone { get; set; }
-        public string    Street { get; set; }
-        public string    City { get; set; }
-        public string    State { get; set; }
-        public string    Zip { get; set; }
-        public string    Country { get; set; }
+        private string    Phone { get; set; }
+        private string    Street { get; set; }
+        private string    City { get; set; }
+        private string    State { get; set; }
+        private string    Zip { get; set; }
+        private string    Country { get; set; }
 
     }
 }
